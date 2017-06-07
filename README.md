@@ -1,6 +1,6 @@
 # integerReversal
 ## Function that returns the reverse of an integer passed to it.
-## [Demo Link](https://smithbrandon.github.io/Covalence-Lab-05/)
+## [Demo Link](https://smithbrandon.github.io/integerReversal/)
 
 ## Extra Labs
 ##### Covalence 
