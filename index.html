@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+
+    </head>
+    <body>
+        <label for="number">Integer to Reverse</label>
+        <input id="number" placeholder="Enter a positive integer">
+        <button id="btn">Reverse</button>
+        <script>
+            var btn = document.getElementById('btn').addEventListener('click',function(){
+                var num = document.getElementById('number').value;
+                alert('The reverse of ' + num + ' is ' + rev(num));
+            })
+            function rev(num){
+                var summation = 0
+
+                //Formula to get Number of Digits without turning it to a string
+                var numOfDigits = Math.floor(Math.log(num) / Math.LN10 + 1);
+                
+                //get x for the summation equation
+                var x = Math.floor(Math.log10(num));
+                
+                //Summation Eq.
+                for (var i = 1; i < x + 1;i++){
+                    summation += Math.floor(num*Math.pow(10,-i))*Math.pow(10,x-i);
+                }
+                return (num*(Math.pow(10, x)))-(99*summation);
+            }
+        </script>
+    </body>
+</html>
